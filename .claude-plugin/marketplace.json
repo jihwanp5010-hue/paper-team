@@ -1,0 +1,5 @@
+{
+  "name": "paper-team",
+  "owner": { "name": "jihwanp5010-hue" },
+  "plugins": [{ "name": "paper-team", "source": "./" }]
+}

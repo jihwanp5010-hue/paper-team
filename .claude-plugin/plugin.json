@@ -1,0 +1,32 @@
+{
+  "name": "paper-team",
+  "version": "0.1.0",
+  "description": "논문팀 공유노트 모드: 팀 모드·실시간 공유·비공개 모드 전환, 상태줄 표시, 현황판 패널",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "folderUrl": {
+      "type": "string",
+      "title": "공유 폴더 링크",
+      "description": "팀 공유 폴더의 Drive 링크. 내 설정에만 저장되고 저장소에는 올라가지 않는다. 비워 두면 폴더 이름으로 찾는다",
+      "default": ""
+    },
+    "folderName": {
+      "type": "string",
+      "title": "공유 폴더 이름",
+      "description": "링크가 없을 때 Drive에서 찾을 폴더 이름",
+      "default": "논문팀 Claude 공유노트"
+    },
+    "authorName": {
+      "type": "string",
+      "title": "작성자 이름",
+      "description": "노트와 실시간로그 파일에 쓸 이름 (예: 지환)",
+      "default": ""
+    },
+    "retentionDays": {
+      "type": "number",
+      "title": "실시간로그 보관 기간(일)",
+      "description": "이 기간이 지난 자기 로그 줄은 다음에 쓸 때 지운다",
+      "default": 3
+    }
+  }
+}
